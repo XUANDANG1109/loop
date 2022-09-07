@@ -49,6 +49,20 @@ while random_number != guess_number:
     guess_number = int(input("Guess the right number from 1 to 10:"))
 print("Correct")
 
-
+# Phase 5
+username = "XuanDang"
+password = "Sunny1109"
+count = 0
+username = input("Enter the username:")
+password = input("Enter the password:")
+while (username != "XuanDang" or password != "Sunny1109") and count < 4:
+    print("Access denied. Try again.")
+    username = input("Enter the username:")
+    password = input("Enter the password:")
+    count = count + 1
+if username == "XuanDang" and password == "Sunny1109":
+        print("Welcome")
+else:
+        print("Access denied")
 
 
