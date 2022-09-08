@@ -65,4 +65,17 @@ if username == "XuanDang" and password == "Sunny1109":
 else:
         print("Access denied")
 
-
+# Phase 6
+import math
+import random
+number = int(input("Random points to generate:"))
+inside_circle = 0
+count = 0
+while number > count:
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    if x*x + y*y < 1:
+        inside_circle = inside_circle + 1
+    count = count + 1
+a = 4 * inside_circle / number
+print("The approximate value of pi: ", a)
